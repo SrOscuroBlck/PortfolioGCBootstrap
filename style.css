@@ -228,6 +228,8 @@ body {
     margin: 20px;
     margin-top: 120px;
     margin-bottom: 100px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 #projects img:hover {
@@ -266,6 +268,19 @@ body {
     color: #46A29F;
 }
 
+#form #cont-name {
+    animation-name: fadeRight;
+    animation-duration: 1s;
+}
+#form #cont-email {
+    animation-name: fadeLeft;
+    animation-duration: 1s;
+}
+#form #cont-duda {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
 
 
 #form textarea {
@@ -287,24 +302,41 @@ body {
 #form button {
     background-color: #46A29F;
     color: white;
+    font-size: 2vw;
+    width: 20vw;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+#form button:hover {
+    transform: scale(1.1,1.1);
+    transition: 1s;
 }
 
 /* End Contact */
 
 
 
-
+/* Media Queries */
 
 @media only screen and (max-width: 800px) {
-
     #intro .parrafoMid {
-        font-size: 18vw;
+        font-size: 16vw;
     }
     #intro .parrafoUp{
         font-size: 3.4vw;
     }
     #intro .parrafoBott  {
         font-size: 3.4vw;
+    }
+
+    #social ul {
+        display: none;
+    }
+
+    #email a {
+        display: none;
+    
     }
 
 }
