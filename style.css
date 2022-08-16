@@ -1,342 +1,384 @@
 @font-face {
-    font-family: K2Dsemi;
-    src: url(../fonts/K2D-SemiBold.ttf);
+  font-family: K2Dsemi;
+  src: url(../fonts/K2D-SemiBold.ttf);
 }
-
 @font-face {
-    font-family: K2Dbold;
-    src: url(../fonts/K2D-ExtraBold.ttf);
+  font-family: K2Dbold;
+  src: url(../fonts/K2D-ExtraBold.ttf);
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: K2Dsemi;
+  margin: 0;
+  padding: 0;
+  font-family: K2Dsemi;
 }
 
 /* Animaciones */
-
+@-webkit-keyframes fadeLeft {
+  0% {
+    opacity: 0%;
+    transform: translateX(-3vw);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes fadeLeft {
-    0% {
-        opacity: 0%;
-        transform: translateX(-3vw);
-    }
-    100% {
-        opacity: 100%;
-    }
-    
+  0% {
+    opacity: 0%;
+    transform: translateX(-3vw);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeRight {
+  0% {
+    opacity: 0%;
+    transform: translateX(3vw);
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 @keyframes fadeRight {
-    0% {
-        opacity: 0%;
-        transform: translateX(3vw);
-    }
-    100% {
-        opacity: 100%;
-    }
-    
+  0% {
+    opacity: 0%;
+    transform: translateX(3vw);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 @keyframes fadeIn {
-    0% {
-        opacity: 0%;
-        transform: scale(1.1,1.1);
-    }
-    100% {
-        opacity: 100%;
-    }
+  0% {
+    opacity: 0%;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 100%;
+  }
 }
-
 body {
-    background-image: url("/img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+/* Media Queries */
 /* Start Navbar */
 #logo {
-    color: #66fcf1;
-    animation-name: fadeLeft;
-    animation-duration: 1s;
+  color: #66fcf1;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
-#logo:hover {
-    color: #C5C6C8;
-    transform: scale(1.1,1.1);
-    transition: transform .8s;
+#logo :hover {
+  color: #C5C6C8;
+  transform: scale(1.1, 1.1);
+  transition: transform 0.8s;
 }
 
 #mynavbar {
-    animation-name: fadeRight;
-    animation-duration: 1s;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
 #mynavbar ul li a {
-    color: #C5C6C8;
-    text-decoration: underline;
-    text-decoration-color: #66fcf1;
-    text-underline-offset: 10px;
-    font-size: 150%;
+  color: #C5C6C8;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #66fcf1;
+          text-decoration-color: #66fcf1;
+  text-underline-offset: 10px;
+  font-size: 150%;
 }
-
-#mynavbar ul a:visited {
-    font-family: K2Dsemi;
-    color:#C5C6C8;
-    text-decoration: none;
+#mynavbar a:visited {
+  font-family: K2Dsemi;
+  color: #C5C6C8;
+  text-decoration: none;
 }
-#mynavbar ul a:hover {
-    font-family: K2Dsemi;
-    color: #46A29F;
-    text-decoration: none;
+#mynavbar a:hover {
+  font-family: K2Dsemi;
+  color: #46A29F;
+  text-decoration: none;
 }
-#mynavbar ul a:hover, a:active {
-    font-family: K2Dsemi;
-    color: #46A29F;
-    text-decoration: none;
+#mynavbar a:hover, #mynavbar :active {
+  font-family: K2Dsemi;
+  color: #46A29F;
+  text-decoration: none;
 }
-
 
 /* End Navbar */
-
 /* Start Aside1 (redes) */
 #social ul {
-    position: fixed;
-    display: block;
-    list-style: none;
-    bottom: 3vw;
-    left: 2.5vw;
+  position: fixed;
+  display: block;
+  list-style: none;
+  bottom: 3vw;
+  left: 2.5vw;
+  /* End Aside1 (redes) */
+}
+#social ul li {
+  margin-top: 15px;
 }
 
-#social ul li {
-    margin-top: 15px;
-}
-/* End Aside1 (redes) */
-    
 /* Start Aside2 (correo) */
 #email a {
-    font-family: K2Dsemi;
-    font-size: 1.5vw;
-    color: #66fcf1;
-    text-decoration: none;
-    position: fixed;
-    transform: rotate(-90deg);
-    bottom: 13vw;
-    animation-name: fadeRight;
-    animation-duration: 1s;
+  font-family: K2Dsemi;
+  font-size: 1.5vw;
+  color: #66fcf1;
+  text-decoration: none;
+  position: fixed;
+  transform: rotate(-90deg);
+  bottom: 13vw;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-/* End Aside2 (correo) */
 
+/* End Aside2 (correo) */
 /* Start Intro */
 #intro .intro {
-    position: relative;
-    width: 70vw;
-    height: 36vh;
-    top: 13.5vh;
-    left: -2.5vw;
+  position: relative;
+  width: 70vw;
+  height: 36vh;
+  top: 13.5vh;
+  left: -2.5vw;
 }
+
 #intro p {
-    color: #C5C6C8;
-    font-family: K2Dsemi;
-    font-size: 36px;
-    justify-content: center;
+  color: #C5C6C8;
+  font-family: K2Dsemi;
+  font-size: 36px;
+  justify-content: center;
 }
 
 #intro .parrafoUp {
-    margin: 0px;
-    padding: 0px;
-    font-size: 3vw;
-    animation-name: fadeLeft;
-    animation-duration: 1s;
+  margin: 0px;
+  padding: 0px;
+  font-size: 3vw;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #intro .parrafoMid {
-    font-family: K2Dbold;
-    color: #46A29F;
-    font-size: 8.8vw;
-    text-align: left;
-    margin: 0px;
-    padding: 0%;
-    border: 0%;
-    animation-name: fadeIn;
-    animation-duration: 1s;
+  font-family: K2Dbold;
+  color: #46A29F;
+  font-size: 8.8vw;
+  text-align: left;
+  margin: 0px;
+  padding: 0%;
+  border: 0%;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #intro .parrafoBott {
-    margin: 0px;
-    margin-top: 20px;
-    font-size: 3vw;
-    float: right;
-    animation-name: fadeRight;
-    animation-duration: 1s;
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 3vw;
+  float: right;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
+
 /* End Intro */
-
 /* Start AboutMe */
-
 #text-img {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 #text-img .textAboutMe {
-    width: 300px;
-    height: 400px;
-    animation-name: fadeLeft;
-    animation-duration: 1s;
-    margin: 40px;
-
+  width: 300px;
+  height: 400px;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  margin: 40px;
 }
-
 #text-img .textAboutMe .bodyTexto {
-    font-family: K2Dsemi;
-    font-size: 118%;
-    color: #C5C6C8;
+  font-family: K2Dsemi;
+  font-size: 118%;
+  color: #C5C6C8;
 }
-
 #text-img .imgAboutMe {
-    width: 300px;
-    height: 400px;
-    margin: 1px;
-    border: 0.2vw solid #C5C6C8;
-    animation-name: fadeRight;
-    animation-duration: 1s;
-    margin: 40px;
+  width: 300px;
+  height: 400px;
+  margin: 1px;
+  border: 0.2vw solid #C5C6C8;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  margin: 40px;
 }
-
 #text-img .imgAboutMe .bodyFoto {
-    width: 300;
-    height: 400px;
-    transform: translate(1vw,1vw);
+  width: 300;
+  height: 400px;
+  transform: translate(1vw, 1vw);
 }
-
 #text-img .imgAboutMe .bodyFoto:hover {
-    transform: translate(1vw,1vw);
-    transform: scale(1.1,1.1);
-    transition: 1.5s;
+  transform: translate(1vw, 1vw);
+  transform: scale(1.1, 1.1);
+  transition: 1.5s;
 }
- /* End AboutMe */
 
+/* End AboutMe */
+/* Start Projects */
 #projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 #projects img {
-    margin: 20px;
-    margin-top: 120px;
-    margin-bottom: 100px;
-    animation-name: fadeIn;
-    animation-duration: 1s;
+  margin: 20px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
 #projects img:hover {
-    transform: scale(1.1,1.1);
-    transition: 1s;
+  transform: scale(1.1, 1.1);
+  transition: 1s;
 }
-/* End Projects */
 
+/* End Projects */
 /* Start Contact */
 #form {
-    margin: 0%;
+  margin: 0%;
 }
 #form h2 {
-    font-family: K2Dsemi;
-    font-size: 2.5vw;
-    color: #C5C6C8;
+  font-family: K2Dsemi;
+  font-size: 2.5vw;
+  color: #C5C6C8;
 }
-
 #form input {
-    font-family: K2Dsemi;
-    font-size: 2vw;
-    margin-right: 15px;
-    margin-bottom: 30px;
-    color: #C5C6C8;
-    border-color: #66fcf1;
-    border-top: #66fcf1;
-    border-left: #66fcf1;
-    border-right: #66fcf1;
-    background: transparent;
+  font-family: K2Dsemi;
+  font-size: 2vw;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  color: #C5C6C8;
+  border-color: #66fcf1;
+  border-top: #66fcf1;
+  border-left: #66fcf1;
+  border-right: #66fcf1;
+  background: transparent;
 }
-
-#form input::placeholder{
-    font-family: K2Dsemi;
-    border-color: #46A29F;
-    font-size: 2vw;
-    color: #46A29F;
+#form input ::-moz-placeholder {
+  font-family: K2Dsemi;
+  border-color: #46A29F;
+  font-size: 2vw;
+  color: #46A29F;
 }
-
+#form input :-ms-input-placeholder {
+  font-family: K2Dsemi;
+  border-color: #46A29F;
+  font-size: 2vw;
+  color: #46A29F;
+}
+#form input ::placeholder {
+  font-family: K2Dsemi;
+  border-color: #46A29F;
+  font-size: 2vw;
+  color: #46A29F;
+}
 #form #cont-name {
-    animation-name: fadeRight;
-    animation-duration: 1s;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 #form #cont-email {
-    animation-name: fadeLeft;
-    animation-duration: 1s;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 #form #cont-duda {
-    animation-name: fadeIn;
-    animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
-
-
 #form textarea {
-    margin-top: 0px;
-    font-family: K2Dsemi;
-    font-size: 2vw;
-    color: #C5C6C8;
-    border-color: #66fcf1;
-    background: transparent;
+  margin-top: 0px;
+  font-family: K2Dsemi;
+  font-size: 2vw;
+  color: #C5C6C8;
+  border-color: #66fcf1;
+  background: transparent;
 }
-
-#form textarea::placeholder {
-    color: #46A29F;
-    font-family: K2Dsemi;
-    font-size: 2vw;
-    padding: 10px;
+#form textarea ::-moz-placeholder {
+  color: #46A29F;
+  font-family: K2Dsemi;
+  font-size: 2vw;
+  padding: 10px;
 }
-
+#form textarea :-ms-input-placeholder {
+  color: #46A29F;
+  font-family: K2Dsemi;
+  font-size: 2vw;
+  padding: 10px;
+}
+#form textarea ::placeholder {
+  color: #46A29F;
+  font-family: K2Dsemi;
+  font-size: 2vw;
+  padding: 10px;
+}
 #form button {
-    background-color: #46A29F;
-    color: white;
-    font-size: 2vw;
-    width: 20vw;
-    animation-name: fadeIn;
-    animation-duration: 1s;
+  background-color: #46A29F;
+  color: white;
+  font-size: 2vw;
+  width: 20vw;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
 #form button:hover {
-    transform: scale(1.1,1.1);
-    transition: 1s;
+  transform: scale(1.1, 1.1);
+  transition: 1s;
 }
 
 /* End Contact */
-
-
-
-/* Media Queries */
-
 @media only screen and (max-width: 800px) {
-    #intro .parrafoMid {
-        font-size: 16vw;
-    }
-    #intro .parrafoUp{
-        font-size: 3.4vw;
-    }
-    #intro .parrafoBott  {
-        font-size: 3.4vw;
-    }
-
-    #social ul {
-        display: none;
-    }
-
-    #email a {
-        display: none;
-    
-    }
-
-}
+  #intro .parrafoMid {
+    font-size: 16vw;
+  }
+  #intro .parrafoUp {
+    font-size: 3.4vw;
+  }
+  #intro .parrafoBott {
+    font-size: 3.4vw;
+  }
+  #social ul {
+    display: none;
+  }
+  #email a {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
