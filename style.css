@@ -12,6 +12,10 @@
   font-family: K2Dsemi;
 }
 
+html {
+  height: 100%;
+}
+
 /* Animaciones */
 @-webkit-keyframes fadeLeft {
   0% {
@@ -102,7 +106,7 @@ body {
   -webkit-text-decoration-color: #66fcf1;
           text-decoration-color: #66fcf1;
   text-underline-offset: 10px;
-  font-size: 150%;
+  font-size: 140%;
 }
 #mynavbar a:visited {
   font-family: K2Dsemi;
@@ -114,7 +118,8 @@ body {
   color: #46A29F;
   text-decoration: none;
 }
-#mynavbar a:hover, #mynavbar :active {
+#mynavbar a:hover,
+#mynavbar :active {
   font-family: K2Dsemi;
   color: #46A29F;
   text-decoration: none;
@@ -155,7 +160,7 @@ body {
   position: relative;
   width: 70vw;
   height: 36vh;
-  top: 13.5vh;
+  top: 10vh;
   left: -2.5vw;
 }
 
@@ -242,9 +247,210 @@ body {
   transform: translate(1vw, 1vw);
   transform: scale(1.1, 1.1);
   transition: 1.5s;
+  filter: sepia(38%) saturate(567%) hue-rotate(129deg) brightness(89%) contrast(83%) !important;
 }
 
 /* End AboutMe */
+/* Start Trajectory */
+#life {
+  padding-top: 5vw !important;
+  padding-bottom: 5vw !important;
+}
+#life .thing1 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing1 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing1 {
+  display: flex;
+  justify-content: right;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing2 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing2 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing3 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing3 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing3 {
+  display: flex;
+  justify-content: right;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing4 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing4 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing5 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing5 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing5 {
+  display: flex;
+  justify-content: right;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing6 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing6 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing7 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing7 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing7 {
+  display: flex;
+  justify-content: right;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing8 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing8 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing9 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: left;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#life .thing9 p {
+  margin-right: 2vw;
+  width: 20vw;
+  font-size: 2vw;
+  color: #C5C6C8;
+}
+#life .thing9 {
+  display: flex;
+  justify-content: right;
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/* End Trajectory */
 /* Start Projects */
 #projects {
   display: flex;
@@ -263,6 +469,7 @@ body {
 #projects img:hover {
   transform: scale(1.1, 1.1);
   transition: 1s;
+  filter: invert(40%) sepia(38%) saturate(567%) hue-rotate(129deg) brightness(89%) contrast(83%);
 }
 
 /* End Projects */
@@ -365,6 +572,32 @@ body {
 }
 
 /* End Contact */
+@media only screen and (max-width: 575px) {
+  #intro {
+    position: fixed;
+    left: 18vw;
+  }
+  #intro .parrafoMid {
+    font-size: 16vw;
+  }
+  #intro .parrafoUp {
+    font-size: 3.4vw;
+  }
+  #intro .parrafoBott {
+    font-size: 3.4vw;
+  }
+  #social ul {
+    display: none;
+  }
+  #email a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #life {
+    padding: 10vw !important;
+  }
+}
 @media only screen and (max-width: 800px) {
   #intro .parrafoMid {
     font-size: 16vw;
@@ -380,5 +613,116 @@ body {
   }
   #email a {
     display: none;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1500px) {
+  #form {
+    margin: 0%;
+  }
+  #form h2 {
+    font-size: 3.5vw;
+  }
+  #form input {
+    font-size: 3vw;
+  }
+  #form input ::-moz-placeholder {
+    font-size: 3vw;
+  }
+  #form input :-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  #form input ::placeholder {
+    font-size: 3vw;
+  }
+  #form textarea {
+    font-size: 3vw;
+    height: 37vh;
+  }
+  #form textarea ::-moz-placeholder {
+    font-size: 3vw;
+  }
+  #form textarea :-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  #form textarea ::placeholder {
+    font-size: 3vw;
+  }
+  #form button {
+    font-size: 3vw;
+    width: 20vw;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  #form {
+    margin: 0%;
+  }
+  #form h2 {
+    font-size: 4.5vw;
+  }
+  #form input {
+    font-size: 4vw;
+  }
+  #form input ::-moz-placeholder {
+    font-size: 4vw;
+  }
+  #form input :-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  #form input ::placeholder {
+    font-size: 4vw;
+  }
+  #form textarea {
+    font-size: 4vw;
+    height: 55vh;
+  }
+  #form textarea ::-moz-placeholder {
+    font-size: 4vw;
+  }
+  #form textarea :-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  #form textarea ::placeholder {
+    font-size: 4vw;
+  }
+  #form button {
+    font-size: 4vw;
+    width: 20vw;
+  }
+}
+@media only screen and (max-width: 399px) {
+  #form {
+    margin: 0%;
+  }
+  #form h2 {
+    font-size: 6.5vw;
+  }
+  #form input {
+    font-size: 6vw;
+  }
+  #form input ::-moz-placeholder {
+    font-size: 6vw;
+  }
+  #form input :-ms-input-placeholder {
+    font-size: 6vw;
+  }
+  #form input ::placeholder {
+    font-size: 6vw;
+  }
+  #form textarea {
+    font-size: 6vw;
+    height: 65vh;
+  }
+  #form textarea ::-moz-placeholder {
+    font-size: 6vw;
+  }
+  #form textarea :-ms-input-placeholder {
+    font-size: 6vw;
+  }
+  #form textarea ::placeholder {
+    font-size: 6vw;
+  }
+  #form button {
+    font-size: 6vw;
+    width: 25vw;
   }
 }/*# sourceMappingURL=style.css.map */

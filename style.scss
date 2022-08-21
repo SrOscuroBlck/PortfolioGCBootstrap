@@ -14,6 +14,10 @@
     font-family: K2Dsemi;
 }
 
+html {
+    height: 100%;
+}
+
 /* Animaciones */
 
 @keyframes fadeLeft {
@@ -21,34 +25,59 @@
         opacity: 0%;
         transform: translateX(-3vw);
     }
+
     100% {
         opacity: 100%;
     }
-    
+
 }
+
 @keyframes fadeRight {
     0% {
         opacity: 0%;
         transform: translateX(3vw);
     }
+
     100% {
         opacity: 100%;
     }
-    
+
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0%;
-        transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
     }
+
     100% {
         opacity: 100%;
     }
 }
 
+
+
 $claro: #C5C6C8;
 $azulele: #66fcf1;
 $azulosc: #46A29F;
+
+@mixin fl {
+    animation-name: fadeLeft;
+    animation-duration: 1s;
+}
+
+@mixin fr {
+    animation-name: fadeRight;
+    animation-duration: 1s;
+}
+
+@mixin fi {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+
+
 
 body {
     background-image: url("/img/background.png");
@@ -62,40 +91,46 @@ body {
 /* Start Navbar */
 #logo {
     color: $azulele;
-    animation-name: fadeLeft;
-    animation-duration: 1s;
+    @include fl;
+
     :hover {
         color: $claro;
-        transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
         transition: transform .8s;
     }
 }
+
 #mynavbar {
-    animation-name: fadeRight;
-    animation-duration: 1s;
+    @include fr;
+
     ul li a {
         color: $claro;
         text-decoration: underline;
         text-decoration-color: $azulele;
         text-underline-offset: 10px;
-        font-size: 150%;
+        font-size: 140%;
     }
+
     a:visited {
         font-family: K2Dsemi;
-        color:$claro;
+        color: $claro;
         text-decoration: none;
     }
+
     a:hover {
         font-family: K2Dsemi;
         color: $azulosc;
         text-decoration: none;
     }
-    a:hover, :active {
+
+    a:hover,
+    :active {
         font-family: K2Dsemi;
         color: $azulosc;
         text-decoration: none;
     }
 }
+
 /* End Navbar */
 
 /* Start Aside1 (redes) */
@@ -105,11 +140,14 @@ body {
     list-style: none;
     bottom: 3vw;
     left: 2.5vw;
+
     li {
         margin-top: 15px;
     }
+
     /* End Aside1 (redes) */
 }
+
 /* Start Aside2 (correo) */
 #email a {
     font-family: K2Dsemi;
@@ -119,9 +157,9 @@ body {
     position: fixed;
     transform: rotate(-90deg);
     bottom: 13vw;
-    animation-name: fadeRight;
-    animation-duration: 1s;
+    @include fr;
 }
+
 /* End Aside2 (correo) */
 
 /* Start Intro */
@@ -129,9 +167,10 @@ body {
     position: relative;
     width: 70vw;
     height: 36vh;
-    top: 13.5vh;
+    top: 10vh;
     left: -2.5vw;
 }
+
 #intro p {
     color: $claro;
     font-family: K2Dsemi;
@@ -143,8 +182,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 3vw;
-    animation-name: fadeLeft;
-    animation-duration: 1s;
+    @include fl;
 }
 
 #intro .parrafoMid {
@@ -155,8 +193,7 @@ body {
     margin: 0px;
     padding: 0%;
     border: 0%;
-    animation-name: fadeIn;
-    animation-duration: 1s;
+    @include fi;
 }
 
 #intro .parrafoBott {
@@ -164,9 +201,9 @@ body {
     margin-top: 20px;
     font-size: 3vw;
     float: right;
-    animation-name: fadeRight;
-    animation-duration: 1s;
+    @include fr;
 }
+
 /* End Intro */
 
 /* Start AboutMe */
@@ -175,69 +212,109 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     .textAboutMe {
         width: 300px;
         height: 400px;
-        animation-name: fadeLeft;
-        animation-duration: 1s;
+        @include fl;
         margin: 40px;
-    
+
         .bodyTexto {
             font-family: K2Dsemi;
             font-size: 118%;
             color: $claro;
         }
     }
+
     .imgAboutMe {
         width: 300px;
         height: 400px;
         margin: 1px;
         border: 0.2vw solid $claro;
-        animation-name: fadeRight;
-        animation-duration: 1s;
+        @include fr;
         margin: 40px;
+
         .bodyFoto {
             width: 300;
             height: 400px;
-            transform: translate(1vw,1vw);
+            transform: translate(1vw, 1vw);
         }
+
         .bodyFoto:hover {
-            transform: translate(1vw,1vw);
-            transform: scale(1.1,1.1);
+            transform: translate(1vw, 1vw);
+            transform: scale(1.1, 1.1);
             transition: 1.5s;
+            filter:  sepia(38%) saturate(567%) hue-rotate(129deg) brightness(89%) contrast(83%) !important;
         }
     }
-    
+
 }
+
 /* End AboutMe */
+
+/* Start Trajectory */
+#life {
+    padding-top: 5vw !important;
+    padding-bottom: 5vw !important;
+    @for $var from 1 to 10 {
+        .thing#{$var}{
+            display: flex;
+            width: 100%;
+            margin-bottom: 40px;
+
+            border-radius: 10px;
+            justify-content: left;
+            @include fl;
+            p {
+                margin-right: 2vw;
+                width: 20vw;
+                font-size: 2vw;
+                color: #C5C6C8;
+            }
+        }
+        @if ((($var)%(2))!=0) {
+            .thing#{$var}{
+                display: flex;
+                justify-content: right;
+                @include fr()
+            }
+        }
+    }
+}
+/* End Trajectory */
 
 /* Start Projects */
 #projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     img {
         margin: 20px;
         margin-top: 120px;
         margin-bottom: 100px;
-        animation-name: fadeIn;
-        animation-duration: 1s;
+        @include fi; 
     }
+
     img:hover {
-        transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
         transition: 1s;
+        filter: invert(40%) sepia(38%) saturate(567%) hue-rotate(129deg) brightness(89%) contrast(83%);
     }
 }
+
 /* End Projects */
 
 /* Start Contact */
 #form {
     margin: 0%;
+
     h2 {
         font-family: K2Dsemi;
         font-size: 2.5vw;
         color: $claro;
     }
+
     input {
         font-family: K2Dsemi;
         font-size: 2vw;
@@ -249,25 +326,27 @@ body {
         border-left: $azulele;
         border-right: $azulele;
         background: transparent;
-        ::placeholder{
+
+        ::placeholder {
             font-family: K2Dsemi;
             border-color: $azulosc;
             font-size: 2vw;
             color: $azulosc;
         }
     }
+
     #cont-name {
-        animation-name: fadeRight;
-        animation-duration: 1s;
+        @include fr;
     }
+
     #cont-email {
-        animation-name: fadeLeft;
-        animation-duration: 1s;
+        @include fl;
     }
+
     #cont-duda {
-        animation-name: fadeIn;
-        animation-duration: 1s;
+        @include fi;
     }
+
     textarea {
         margin-top: 0px;
         font-family: K2Dsemi;
@@ -275,6 +354,7 @@ body {
         color: $claro;
         border-color: $azulele;
         background: transparent;
+
         ::placeholder {
             color: $azulosc;
             font-family: K2Dsemi;
@@ -282,31 +362,40 @@ body {
             padding: 10px;
         }
     }
-    
-    
+
+
     button {
         background-color: $azulosc;
         color: white;
         font-size: 2vw;
         width: 20vw;
-        animation-name: fadeIn;
-        animation-duration: 1s;
+        @include fi;
     }
+
     button:hover {
-        transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
         transition: 1s;
     }
 }
+
 /* End Contact */
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 575px) {
+    #intro {
+        position: fixed;
+        left: 18vw;
+    }
+
     #intro .parrafoMid {
         font-size: 16vw;
     }
-    #intro .parrafoUp{
+
+    #intro .parrafoUp {
         font-size: 3.4vw;
     }
-    #intro .parrafoBott  {
+
+    #intro .parrafoBott {
         font-size: 3.4vw;
     }
 
@@ -316,7 +405,136 @@ body {
 
     #email a {
         display: none;
-    
     }
 
+}
+
+@media only screen and (max-width: 767px) {
+    #life {
+        padding: 10vw !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    #intro .parrafoMid {
+        font-size: 16vw;
+    }
+
+    #intro .parrafoUp {
+        font-size: 3.4vw;
+    }
+
+    #intro .parrafoBott {
+        font-size: 3.4vw;
+    }
+
+    #social ul {
+        display: none;
+    }
+
+    #email a {
+        display: none;
+
+    }
+
+}
+
+
+
+@media only screen and (min-width: 800px) and (max-width: 1500px) {
+    #form {
+        margin: 0%;
+
+        h2 {
+            font-size: 3.5vw;
+        }
+
+        input {
+            font-size: 3vw;
+
+            ::placeholder {
+                font-size: 3vw;
+            }
+        }
+
+        textarea {
+            font-size: 3vw;
+            height: 37vh;
+
+            ::placeholder {
+                font-size: 3vw;
+            }
+        }
+
+        button {
+            font-size: 3vw;
+            width: 20vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+    #form {
+        margin: 0%;
+
+        h2 {
+            font-size: 4.5vw;
+        }
+
+        input {
+            font-size: 4vw;
+
+            ::placeholder {
+                font-size: 4vw;
+            }
+        }
+
+        textarea {
+            font-size: 4vw;
+            height: 55vh;
+
+            ::placeholder {
+                font-size: 4vw;
+            }
+        }
+
+        button {
+            font-size: 4vw;
+            width: 20vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    #form {
+        margin: 0%;
+
+        h2 {
+            font-size: 6.5vw;
+        }
+
+        input {
+            font-size: 6vw;
+
+            ::placeholder {
+                font-size: 6vw;
+            }
+        }
+
+        textarea {
+            font-size: 6vw;
+            height: 65vh;
+
+            ::placeholder {
+                font-size: 6vw;
+            }
+        }
+
+        button {
+            font-size: 6vw;
+            width: 25vw;
+        }
+    }
 }
