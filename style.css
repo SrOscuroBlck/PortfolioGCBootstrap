@@ -71,6 +71,9 @@ html {
     opacity: 100%;
   }
 }
+/* Variables */
+/* Mixins */
+/* Mapping */
 body {
   background-image: url("/img/background.png");
   background-size: cover;
@@ -172,6 +175,18 @@ body {
 }
 
 #intro .parrafoUp {
+  color: #C5C6C8;
+}
+
+#intro .parrafoMid {
+  color: #46A29F;
+}
+
+#intro .parrafoBott {
+  color: #C5C6C8;
+}
+
+#intro .parrafoUp {
   margin: 0px;
   padding: 0px;
   font-size: 3vw;
@@ -183,8 +198,7 @@ body {
 
 #intro .parrafoMid {
   font-family: K2Dbold;
-  color: #46A29F;
-  font-size: 8.8vw;
+  font-size: 8.7vw;
   text-align: left;
   margin: 0px;
   padding: 0%;
@@ -524,7 +538,7 @@ body {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-#form #cont-duda {
+#form #cont-duda, #form button {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -561,10 +575,6 @@ body {
   color: white;
   font-size: 2vw;
   width: 20vw;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 #form button:hover {
   transform: scale(1.1, 1.1);

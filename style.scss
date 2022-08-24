@@ -56,10 +56,14 @@ html {
 }
 
 
+/* Variables */ 
 
 $claro: #C5C6C8;
 $azulele: #66fcf1;
 $azulosc: #46A29F;
+
+
+/* Mixins */ 
 
 @mixin fl {
     animation-name: fadeLeft;
@@ -75,6 +79,15 @@ $azulosc: #46A29F;
     animation-name: fadeIn;
     animation-duration: 1s;
 }
+
+/* Mapping */
+
+$colors: (
+ Up: $claro,
+ Mid:  #46A29F,
+ Bott: $claro
+);
+
 
 
 
@@ -178,6 +191,12 @@ body {
     justify-content: center;
 }
 
+@each $name,$color in $colors {
+    #intro .parrafo#{$name} {
+        color: map-get($colors, $name);
+    }
+}
+
 #intro .parrafoUp {
     margin: 0px;
     padding: 0px;
@@ -187,8 +206,7 @@ body {
 
 #intro .parrafoMid {
     font-family: K2Dbold;
-    color: $azulosc;
-    font-size: 8.8vw;
+    font-size: 8.7vw;
     text-align: left;
     margin: 0px;
     padding: 0%;
@@ -369,7 +387,7 @@ body {
         color: white;
         font-size: 2vw;
         width: 20vw;
-        @include fi;
+        @extend #cont-duda;
     }
 
     button:hover {
