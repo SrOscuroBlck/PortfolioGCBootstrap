@@ -1,11 +1,11 @@
 @font-face {
     font-family: K2Dsemi;
-    src: url(../fonts/K2D-SemiBold.ttf);
+    src: url(fonts/K2D-SemiBold.ttf);
 }
 
 @font-face {
     font-family: K2Dbold;
-    src: url(../fonts/K2D-ExtraBold.ttf);
+    src: url(fonts/K2D-ExtraBold.ttf);
 }
 
 * {
@@ -93,7 +93,7 @@ $colors: (
 
 
 body {
-    background-image: url("/img/background.png");
+    background-image: url("img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
