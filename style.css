@@ -490,6 +490,7 @@ body {
 /* Start Contact */
 #form {
   margin: 0%;
+  padding-bottom: 5vw !important;
 }
 #form h2 {
   font-family: K2Dsemi;
