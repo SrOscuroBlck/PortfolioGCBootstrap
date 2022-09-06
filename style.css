@@ -492,15 +492,14 @@ body {
   display: block;
 }
 #projects .explain .explainHack {
-  width: 500px;
+  padding-top: 100px !important;
+  width: 600px;
   height: 400px;
   -webkit-animation-name: fadeLeft;
           animation-name: fadeLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   margin: 40px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 #projects .explain .explainHack p {
   font-family: K2Dsemi;
@@ -508,16 +507,14 @@ body {
   color: #C5C6C8;
 }
 #projects .explain .explainMemento {
-  width: 500px;
+  padding-top: 200px !important;
+  width: 600px;
   height: 400px;
   -webkit-animation-name: fadeLeft;
           animation-name: fadeLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   margin: 40px;
-  margin-top: 200px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 #projects .explain .explainMemento p {
   font-family: K2Dsemi;
@@ -525,17 +522,15 @@ body {
   color: #C5C6C8;
 }
 #projects .explain .explainPokemon {
-  width: 500px;
+  padding-top: 200px !important;
+  margin-bottom: 400px !important;
+  width: 600px;
   height: 400px;
   -webkit-animation-name: fadeLeft;
           animation-name: fadeLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   margin: 40px;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 #projects .explain .explainPokemon p {
   font-family: K2Dsemi;
@@ -756,6 +751,24 @@ body {
     font-size: 4vw;
     width: 20vw;
   }
+  .explain {
+    padding-left: 30px !important;
+  }
+  .explain .explainHack {
+    margin-left: 100px !important;
+    width: 400px !important;
+    height: auto !important;
+  }
+  .explain .explainMemento {
+    margin-left: 100px !important;
+    width: 400px !important;
+    height: auto !important;
+  }
+  .explain .explainPokemon {
+    margin-left: 100px !important;
+    width: 400px !important;
+    height: auto !important;
+  }
 }
 @media only screen and (max-width: 399px) {
   #form {
@@ -792,5 +805,23 @@ body {
   #form button {
     font-size: 6vw;
     width: 25vw;
+  }
+  .explain {
+    padding-left: 30px !important;
+  }
+  .explain .explainHack {
+    margin-left: 150px !important;
+    width: 300px !important;
+    height: auto !important;
+  }
+  .explain .explainMemento {
+    margin-left: 150px !important;
+    width: 300px !important;
+    height: auto !important;
+  }
+  .explain .explainPokemon {
+    margin-left: 150px !important;
+    width: 300px !important;
+    height: auto !important;
   }
 }/*# sourceMappingURL=style.css.map */
