@@ -755,18 +755,18 @@ body {
     padding-left: 30px !important;
   }
   .explain .explainHack {
-    margin-left: 100px !important;
-    width: 400px !important;
+    margin-left: 5vw !important;
+    width: 300px !important;
     height: auto !important;
   }
   .explain .explainMemento {
-    margin-left: 100px !important;
-    width: 400px !important;
+    margin-left: 5vw !important;
+    width: 300px !important;
     height: auto !important;
   }
   .explain .explainPokemon {
-    margin-left: 100px !important;
-    width: 400px !important;
+    margin-left: 5vw !important;
+    width: 300px !important;
     height: auto !important;
   }
 }
@@ -810,18 +810,18 @@ body {
     padding-left: 30px !important;
   }
   .explain .explainHack {
-    margin-left: 150px !important;
-    width: 300px !important;
+    margin-left: 2vw !important;
+    width: 200px !important;
     height: auto !important;
   }
   .explain .explainMemento {
-    margin-left: 150px !important;
-    width: 300px !important;
+    margin-left: 2vw !important;
+    width: 200px !important;
     height: auto !important;
   }
   .explain .explainPokemon {
-    margin-left: 150px !important;
-    width: 300px !important;
+    margin-left: 2vw !important;
+    width: 200px !important;
     height: auto !important;
   }
 }/*# sourceMappingURL=style.css.map */
