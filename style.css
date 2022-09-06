@@ -485,6 +485,63 @@ body {
   transition: 1s;
   filter: invert(40%) sepia(38%) saturate(567%) hue-rotate(129deg) brightness(89%) contrast(83%);
 }
+#projects h3 {
+  color: #46A29F;
+}
+#projects .explain {
+  display: block;
+}
+#projects .explain .explainHack {
+  width: 500px;
+  height: 400px;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  margin: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#projects .explain .explainHack p {
+  font-family: K2Dsemi;
+  font-size: 118%;
+  color: #C5C6C8;
+}
+#projects .explain .explainMemento {
+  width: 500px;
+  height: 400px;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  margin: 40px;
+  margin-top: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#projects .explain .explainMemento p {
+  font-family: K2Dsemi;
+  font-size: 118%;
+  color: #C5C6C8;
+}
+#projects .explain .explainPokemon {
+  width: 500px;
+  height: 400px;
+  -webkit-animation-name: fadeLeft;
+          animation-name: fadeLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  margin: 40px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#projects .explain .explainPokemon p {
+  font-family: K2Dsemi;
+  font-size: 118%;
+  color: #C5C6C8;
+}
 
 /* End Projects */
 /* Start Contact */
